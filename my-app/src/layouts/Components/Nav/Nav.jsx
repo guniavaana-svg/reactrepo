@@ -1,10 +1,20 @@
 import "./Nav.css";
+import AboutUs from "../../../Pages/AboutUs.jsx";
+function goToPage(){
+  const state={page: "about"};
+  history.pushState(state, " ", "/about");
+  document.body.innerHTML="<h2>this is about page</h2>"
+  root.render(<AboutUs/>)
+}
 function nav() {
   return (
     <nav className="nav">
       <ul>
         <li>
-          <a href="#">ჩვენ შესახებ</a>
+          <a onClick={(e)=>{
+            e.preventDefault();
+            goToPage()
+          }}>ჩვენ შესახებ</a>
           <ul>
             <li>
               <a href="#">მისია, მიზნები, სტრატეგია</a>
