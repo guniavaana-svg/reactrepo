@@ -1,17 +1,23 @@
 import "./App.css";
 import Header from "./layouts/Header/Header.jsx";
 import Footer from "./layouts/Footer/Footer.jsx";
-import Card from "./layouts/Components/Card/Card.jsx";
-import Exp from "./Exp/Exp.jsx";
-
+import Posts from "./layouts/SecData/PostsData/PostsData.jsx";
+import Users from "./layouts/SecData/UsersData/UsersData.jsx";
 const ar = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function App() {
   return (
     <>
-      <Header></Header>   
+      <Header></Header>
       <main className="main container">
-        <Exp></Exp>
+        <section className="postsSection">
+          <h2>this is posts section</h2>
+          <Posts />
+        </section>
+        <section className="usersSection">
+          <h2>this is Users section</h2>
+          <Users />
+        </section>
         {/* <section className="Cards">
           {ar.map(() => (
             <Card />

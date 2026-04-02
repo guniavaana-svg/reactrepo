@@ -1,0 +1,169 @@
+const usersData = [
+  {
+    id: 103,
+    firstName: "Giorgi",
+    lastName: "Mchedlishvili",
+    email: "giorgi.m@example.com",
+    phone: "+995599112233",
+    address: {
+      street: "5 Tamar St",
+      city: "Kutaisi",
+      zip: "4600",
+      country: "Georgia",
+    },
+    isActive: true,
+    roles: ["user"],
+  },
+  {
+    id: 104,
+    firstName: "Elene",
+    lastName: "Japaridze",
+    email: "elene.j@example.com",
+    phone: "+995577889900",
+    address: {
+      street: "21 Agmashenebeli Ave",
+      city: "Batumi",
+      zip: "6000",
+      country: "Georgia",
+    },
+    isActive: true,
+    roles: ["editor"],
+  },
+  {
+    id: 105,
+    firstName: "David",
+    lastName: "Smith",
+    email: "david.smith@example.com",
+    phone: "+12025550123",
+    address: {
+      street: "742 Evergreen Terrace",
+      city: "Springfield",
+      zip: "62704",
+      country: "USA",
+    },
+    isActive: false,
+    roles: ["user"],
+  },
+  {
+    id: 106,
+    firstName: "Sofia",
+    lastName: "Rossi",
+    email: "sofia.rossi@example.com",
+    phone: "+390612345678",
+    address: {
+      street: "Via Roma 10",
+      city: "Rome",
+      zip: "00100",
+      country: "Italy",
+    },
+    isActive: true,
+    roles: ["admin"],
+  },
+  {
+    id: 107,
+    firstName: "Ali",
+    lastName: "Khan",
+    email: "ali.khan@example.com",
+    phone: "+923001234567",
+    address: {
+      street: "12 Main Blvd",
+      city: "Lahore",
+      zip: "54000",
+      country: "Pakistan",
+    },
+    isActive: true,
+    roles: ["user"],
+  },
+  {
+    id: 108,
+    firstName: "Emma",
+    lastName: "Brown",
+    email: "emma.brown@example.com",
+    phone: "+447911123456",
+    address: {
+      street: "221B Baker St",
+      city: "London",
+      zip: "NW1",
+      country: "UK",
+    },
+    isActive: false,
+    roles: ["editor"],
+  },
+  {
+    id: 109,
+    firstName: "Noah",
+    lastName: "Dubois",
+    email: "noah.dubois@example.com",
+    phone: "+33123456789",
+    address: {
+      street: "18 Rue de Rivoli",
+      city: "Paris",
+      zip: "75001",
+      country: "France",
+    },
+    isActive: true,
+    roles: ["user"],
+  },
+  {
+    id: 110,
+    firstName: "Mia",
+    lastName: "Andersson",
+    email: "mia.andersson@example.com",
+    phone: "+46701234567",
+    address: {
+      street: "Storgatan 5",
+      city: "Stockholm",
+      zip: "11122",
+      country: "Sweden",
+    },
+    isActive: true,
+    roles: ["admin", "editor"],
+  },
+  {
+    id: 111,
+    firstName: "Carlos",
+    lastName: "Silva",
+    email: "carlos.silva@example.com",
+    phone: "+5511987654321",
+    address: {
+      street: "Av Paulista 1000",
+      city: "São Paulo",
+      zip: "01310-100",
+      country: "Brazil",
+    },
+    isActive: false,
+    roles: ["user"],
+  },
+  {
+    id: 112,
+    firstName: "Yuki",
+    lastName: "Tanaka",
+    email: "yuki.tanaka@example.com",
+    phone: "+819012345678",
+    address: {
+      street: "1-2-3 Shibuya",
+      city: "Tokyo",
+      zip: "150-0002",
+      country: "Japan",
+    },
+    isActive: true,
+    roles: ["user"],
+  },
+];
+function Users() {
+  console.log(usersData);
+  return (
+    <div>
+      kzjsdfhgjkl;
+      {usersData.map((user) => {
+        <ul className="user" key={user.id}>
+          <li>
+            {`${user.firstName} ${user.lastName}`}
+            {user.firstName}
+          </li>
+        </ul>;
+      })}
+    </div>
+  );
+}
+export default Users;
