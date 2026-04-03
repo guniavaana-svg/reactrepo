@@ -1,4 +1,3 @@
-import "./POstsData.css";
 const postsData = [
   {
     id: 1,
@@ -44,17 +43,4 @@ const postsData = [
   },
 ];
 
-export default function Posts() {
-  console.log(postsData);
-  return (
-    <div className="posts">
-      {postsData.map((post) => (
-        <div className="post" key={post.id}>
-          <img src={post.image} alt="" />
-          <h2>{post.title}</h2>
-          <p>{post.description}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
+export default postsData;

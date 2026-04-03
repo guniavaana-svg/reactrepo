@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: antiquewhite;
+  @apply bg-amber-100;
 }
 ul li {
   list-style: none;
-  @apply bg-amber-500;
+  
 }
 a {
   color: #444;

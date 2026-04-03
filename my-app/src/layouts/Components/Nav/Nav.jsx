@@ -1,5 +1,6 @@
 import "./Nav.css";
 import AboutUs from "../../../Pages/AboutUs.jsx";
+import navData from "../../SecData/NavData.jsx";
 function goToPage(){
   const state={page: "about"};
   history.pushState(state, " ", "/about");
@@ -9,7 +10,7 @@ function goToPage(){
 function nav() {
   return (
     <nav className="nav">
-      <ul>
+      {/* <ul>
         <li>
           <a onClick={(e)=>{
             e.preventDefault();
@@ -56,6 +57,11 @@ function nav() {
         <li>
           <a href="#">კონტაქტი</a>
         </li>
+      </ul> */}
+      <ul>
+        {navData.map(nav=>(
+          <li key={nav.id}><a href={nav.link}>{nav.title}</a></li>
+        ))}
       </ul>
     </nav>
   );

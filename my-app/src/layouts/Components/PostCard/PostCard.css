@@ -1,8 +1,4 @@
-.posts {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
+
 
 .post {
   max-width: 300px;

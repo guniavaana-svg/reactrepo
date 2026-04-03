@@ -1,3 +1,9 @@
+h2{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #444;
+}
 .main .Cards {
   display: flex;
   align-items: center;
@@ -6,3 +12,10 @@
   flex-wrap: wrap;
 }
 
+.posts, .users{
+  
+  display: flex;
+  flex-direction:  row;
+  gap: 10px;
+  flex-wrap: wrap;
+}

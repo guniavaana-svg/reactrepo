@@ -5,6 +5,7 @@ const usersData = [
     lastName: "Mchedlishvili",
     email: "giorgi.m@example.com",
     phone: "+995599112233",
+    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
     address: {
       street: "5 Tamar St",
       city: "Kutaisi",
@@ -20,6 +21,7 @@ const usersData = [
     lastName: "Japaridze",
     email: "elene.j@example.com",
     phone: "+995577889900",
+    avatar: "https://randomuser.me/api/portraits/women/2.jpg",
     address: {
       street: "21 Agmashenebeli Ave",
       city: "Batumi",
@@ -35,6 +37,7 @@ const usersData = [
     lastName: "Smith",
     email: "david.smith@example.com",
     phone: "+12025550123",
+    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
     address: {
       street: "742 Evergreen Terrace",
       city: "Springfield",
@@ -50,6 +53,7 @@ const usersData = [
     lastName: "Rossi",
     email: "sofia.rossi@example.com",
     phone: "+390612345678",
+    avatar: "https://randomuser.me/api/portraits/women/4.jpg",
     address: {
       street: "Via Roma 10",
       city: "Rome",
@@ -65,6 +69,7 @@ const usersData = [
     lastName: "Khan",
     email: "ali.khan@example.com",
     phone: "+923001234567",
+    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
     address: {
       street: "12 Main Blvd",
       city: "Lahore",
@@ -80,6 +85,7 @@ const usersData = [
     lastName: "Brown",
     email: "emma.brown@example.com",
     phone: "+447911123456",
+    avatar: "https://randomuser.me/api/portraits/women/6.jpg",
     address: {
       street: "221B Baker St",
       city: "London",
@@ -95,6 +101,7 @@ const usersData = [
     lastName: "Dubois",
     email: "noah.dubois@example.com",
     phone: "+33123456789",
+    avatar: "https://randomuser.me/api/portraits/men/7.jpg",
     address: {
       street: "18 Rue de Rivoli",
       city: "Paris",
@@ -110,6 +117,7 @@ const usersData = [
     lastName: "Andersson",
     email: "mia.andersson@example.com",
     phone: "+46701234567",
+    avatar: "https://randomuser.me/api/portraits/women/8.jpg",
     address: {
       street: "Storgatan 5",
       city: "Stockholm",
@@ -125,6 +133,7 @@ const usersData = [
     lastName: "Silva",
     email: "carlos.silva@example.com",
     phone: "+5511987654321",
+    avatar: "https://randomuser.me/api/portraits/men/9.jpg",
     address: {
       street: "Av Paulista 1000",
       city: "São Paulo",
@@ -140,6 +149,7 @@ const usersData = [
     lastName: "Tanaka",
     email: "yuki.tanaka@example.com",
     phone: "+819012345678",
+    avatar: "https://randomuser.me/api/portraits/women/10.jpg",
     address: {
       street: "1-2-3 Shibuya",
       city: "Tokyo",
@@ -150,20 +160,5 @@ const usersData = [
     roles: ["user"],
   },
 ];
-function Users() {
-  console.log(usersData);
-  return (
-    <div>
-      kzjsdfhgjkl;
-      {usersData.map((user) => {
-        <ul className="user" key={user.id}>
-          <li>
-            {`${user.firstName} ${user.lastName}`}
-            {user.firstName}
-          </li>
-        </ul>;
-      })}
-    </div>
-  );
-}
-export default Users;
+
+export default usersData;
