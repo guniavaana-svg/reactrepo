@@ -12,7 +12,7 @@ h2{
   flex-wrap: wrap;
 }
 
-.posts, .users{
+.posts, .users, .products{
   
   display: flex;
   flex-direction:  row;
