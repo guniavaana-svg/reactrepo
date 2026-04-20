@@ -8,6 +8,7 @@ import Btn from "./layouts/Components/Btn/Btn.jsx";
 import postsData from "./layouts/SecData/PostsData.jsx";
 import usersData from "./layouts/SecData/UsersData.jsx";
 import productData from "./layouts/SecData/ProductData.jsx";
+import Counter from "./layouts/Components/Counter/Counter.jsx";
 const ar = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function App() {
@@ -50,6 +51,9 @@ function App() {
             <Card />
           ))}
         </section> */}
+        <section className="counter">
+          <Counter></Counter>
+        </section>
       </main>
       <Footer></Footer>
     </>
