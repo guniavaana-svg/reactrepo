@@ -1,1 +1,28 @@
-p{color: brown;}
+.count {color: brown;}
+.changeColor{color:rgb(27, 27, 1)}
+h3{
+    color: brown;
+}
+.modal{
+    
+}
+.active{
+    display: flex;
+}
+.pasive{
+    display: none;
+}
+.show{
+    max-width: 500px;
+    border: 1px solid red;
+    padding: 5px;
+    position: absolute;
+    top:50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: antiquewhite;
+}
+p span{
+ color:red;
+ font-weight:700 ;
+}

@@ -19,3 +19,10 @@ h2{
   gap: 10px;
   flex-wrap: wrap;
 }
+section {
+  border: 1px #888 solid;
+  padding-bottom: 30px;
+}
+.counter{
+  position: relative;
+}
