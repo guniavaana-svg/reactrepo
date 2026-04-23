@@ -1,28 +1,19 @@
-.count {color: brown;}
-.changeColor{color:rgb(27, 27, 1)}
-h3{
-    color: brown;
+.count {
+  color: brown;
 }
-.modal{
-    
+.changeColor {
+  color: rgb(27, 27, 1);
 }
-.active{
-    display: flex;
+h3 {
+  color: brown;
 }
-.pasive{
-    display: none;
+.active {
+  display: flex;
 }
-.show{
-    max-width: 500px;
-    border: 1px solid red;
-    padding: 5px;
-    position: absolute;
-    top:50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    background-color: antiquewhite;
+.pasive {
+  display: none;
 }
-p span{
- color:red;
- font-weight:700 ;
+p span {
+  color: red;
+  font-weight: 700;
 }

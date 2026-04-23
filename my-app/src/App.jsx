@@ -17,21 +17,33 @@ const ar = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
       <main className="main container">
         <section className="postsSection">
           <h2>this is posts section</h2>
           <div className="posts">
-            {postsData.map(post=>(
-             <Posts key={post.id} img={post.image} title={post.title} description={post.description}></Posts>
-          ))}
+            {postsData.map((post) => (
+              <Posts
+                key={post.id}
+                img={post.image}
+                title={post.title}
+                description={post.description}
+              ></Posts>
+            ))}
           </div>
         </section>
         <section className="usersSection">
           <h2>this is Users section</h2>
           <div className="users">
-            {usersData.map(user=>(
-              <User key={user.id} firstName={user.firstName} lastName={user.lastName} email={user.email} phone={user.phone} img={user.avatar}></User>
+            {usersData.map((user) => (
+              <User
+                key={user.id}
+                firstName={user.firstName}
+                lastName={user.lastName}
+                email={user.email}
+                phone={user.phone}
+                img={user.avatar}
+              ></User>
             ))}
           </div>
         </section>
@@ -42,8 +54,18 @@ function App() {
               <Btn text="read more"></Btn>
             </Product>
             {console.log(productData)}
-            {productData.map(pro=>(
-              <Product key={pro.id} test="txt" img={pro.image_url} name={pro.name} brand={pro.brand} description={pro.description}  price={pro.price} currency={pro.currency} rating={pro.rating}>
+            {productData.map((pro) => (
+              <Product
+                key={pro.id}
+                test="txt"
+                img={pro.image_url}
+                name={pro.name}
+                brand={pro.brand}
+                description={pro.description}
+                price={pro.price}
+                currency={pro.currency}
+                rating={pro.rating}
+              >
                 <Btn text="properties"></Btn>
               </Product>
             ))}
@@ -57,11 +79,22 @@ function App() {
         <section className="counter">
           <Counter></Counter>
         </section>
-        <section className="recipes">
+        <section className="recipeSection">
           <h2>this is recipes section</h2>
-          {console.log(RecipeData)}
-          <Recipe>
-          </Recipe>
+          <div className="recipes">
+            {RecipeData.map((rec) => (
+              <Recipe
+                key={rec.id}
+                name={rec.name}
+                ingredients={rec.ingredients}
+                instructions={rec.instructions}
+                prepTimeMinutes={rec.prepTimeMinutes}
+                cookTimeMinutes={rec.cookTimeMinutes}
+                cuisine={rec.cuisine}
+                image={rec.image}
+              ></Recipe>
+            ))}
+          </div>
         </section>
       </main>
       <Footer></Footer>

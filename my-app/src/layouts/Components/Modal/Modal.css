@@ -1,0 +1,12 @@
+.show {
+  max-width: 500px;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 3px 3px 35px 0.5px red;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: antiquewhite;
+}

@@ -1,4 +1,4 @@
-h2{
+h2 {
   font-size: 20px;
   font-weight: 500;
   margin: 20px 0;
@@ -12,10 +12,12 @@ h2{
   flex-wrap: wrap;
 }
 
-.posts, .users, .products{
-  
+.posts,
+.users,
+.products,
+.recipes {
   display: flex;
-  flex-direction:  row;
+  flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -23,6 +25,7 @@ section {
   border: 1px #888 solid;
   padding-bottom: 30px;
 }
-.counter{
+.counter {
   position: relative;
+  background-color: darkkhaki;
 }
